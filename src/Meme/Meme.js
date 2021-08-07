@@ -27,8 +27,8 @@ export const Meme = () => {
     const currentMeme = memes[memeIndex];
     const formData = new FormData();
 
-    formData.append('username', 'portexe');
-    formData.append('password', 'abc123');
+    formData.append('username', 'AdityaPasnani');
+    formData.append('password', 'meme@imgflip');
     formData.append('template_id', currentMeme.id);
     captions.forEach((c, index) => formData.append(`boxes[${index}][text]`, c));
 
